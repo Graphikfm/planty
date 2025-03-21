@@ -21,4 +21,13 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
-// END ENQUEUE PARENT ACTION
+function afficher_lien_pour_admin_connecte($items, $args) {
+    // conditions si un admin est connecté 
+    if (is_user_logged_in() && current_user_can('manage_options')) {
+        // on stock dans une variable php l'element html a inserer
+        $items .= '<li id="admin-link" class="menu-item"><a class="link_Ad" href="http://planty.local:10010/wp-admin/index.php">Admin</a></li>';
+    }
+    return $items;
+}
+// on utilise le hook wp_nav_menu_items pour inserer le lien dasn l'element nav 
+add_filter('wp_nav_menu_items', 'afficher_lien_pour_admin_connecte', 10, 2);

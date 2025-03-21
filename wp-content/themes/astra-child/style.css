@@ -10,4 +10,262 @@ Version: 4.8.12.1739546675
 Updated: 2025-02-14 15:24:35
 
 */
+#menu-item-420 {
+    background-color: #DC9F96;
+    color: white !important;
+}
+#menu-item-420:hover {
+    background-color: #c02e44;
+}
+
+
+#admin-link {
+    color: black !important;
+}
+
+.link_Ad:active {
+    color: black;
+}  
+
+
+#menu-item-12 > a {
+    color: white !important;
+}
+#masthead .ast-container{
+    padding-right: 0px !important;
+}
+.menu-item {
+    padding: 0px 40px !important;
+}
+.menu-item > #menu-item-12 {
+    line-height: 71px !important;
+}
+.site-primary-header-wrap {
+    height: 71px !important;
+    line-height: 71px !important;
+}
+
+#plante-droite {
+    bottom: 65px;
+    position: absolute;
+    left: 44%; /* Centre par rapport au container */
+    transform: translateX(30%); /* Avance la feuille vers la droite */
+    width: 15vw; /* juster la taille en fonction de l'ecran*/
+}
+#plante-gauche {
+    position: absolute;
+    left: 55.6%; /* Centre par rapport au container */
+    transform: translateX(-130%); /* Recule la feuille vers la gauche */
+    width: 15vw; /* juster la taille en fonction de l'ecran*/
+    bottom: 65px;
+    /* margin-right: 320px; */
+}
+#canette {
+    z-index:1;
+    justify-content: flex-end;
+  
+}
+#inner-container-header-home > .e-con-inner {
+    position: relative;
+     padding: 0px 100px; 
+    justify-content: center;
+
+}
+#inner-container-header-home {
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+#titre-page-accueil> .elementor-widget-container > h2 {
+    font-family: Syne sans-serif;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 45.6px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #3B8E46;
+}
+
+/* form commande*/
+.form-commande {
+    background: #3B8E46;
+    padding: 20px 200px;
+   
+}
+.titre-form-commande {
+    font-family: syne;
+    font-weight: extra bold;
+}
+.container-form-flex-col {
+    border-top: 1px solid white;
+   
+}
+.container-inupt-image p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-commande h1 {
+    margin-top: 20px;
+}
+.form-commande h1, .form-commande label {
+    color: white;
+}
+.container-inputs-top {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid white;
+    margin-bottom:30px;
+}
+.container-inputs-bottom {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+}
+.container-form-flex-col p > input {
+    margin-left:40px;
+}
+.container-inputs-left p > label span > input, .container-inputs-right p > label span > input {
+    height: 50px;
+}
+.container-inputs-bottom p > .span-transition {
+    display: block;
+    border:1px solid white;
+    height: 100%;
+}
+p > .button-submit-commande {
+    text-align: center;
+}
+.container-inputs-top .wpcf7-form-control-wrap {
+   width: 40px;
+   padding: 0;
+}
+.container-inupt-image p > span input {
+    padding:0px 14px !important;
+    margin: 0px 0px 0px 0px !important;
+    height: 60px;
+    border-radius: 0px;
+}
+.container-form-flex-col p {
+    display: flex;
+    justify-content: center;
+}
+.container-inupt-image span {
+   text-align: center;
+}
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin:0;
+    padding: 0;
+    display: none;
+}
+input[type="number"] {
+    -moz-appearance:textfield;
+}
+.button-submit-commande:hover {
+    background-color: #c02e44 !important;
+}
+/* end form commande*/
+
+/*form contact*/
+
+.container_form_contact {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.container_form_contact input, .container_form_contact textarea {
+width: 100%;
+border: none;
+box-shadow: none;
+
+}
+.container_form_contact p {
+    width: 50%;
+}
+.container_form_contact .wpcf7-submit {
+    padding: 10px 30px;
+}
+.container_form_contact .wpcf7-submit:hover {
+    background-color: #c02e44;
+}
+.container_button > p {
+    width: 100%;
+}
+.wpcf7-response-output {
+    color: white !important;
+}
+.wpcf7 form .wpcf7-response-output {
+    border: none;
+}
+/* end form contact*/
+@media(min-width:768px) {
+
+    /* .elementor-element.elementor-element-fdf5f0e, .elementor-element.elementor-element-1cb2330 {
+        width:22% !important;
+    } */
+    #canette {
+        max-width: 250px;
+        width: 100% !important;
+    }
+    #plante-gauche, #plante-droite {
+        width: 100% !important;
+        max-width: 220px;
+    }
+
+}
+@media(min-width:550px) and (max-width:768px) {
+    #canette {
+        max-width: 200px;
+        width: 100% !important;
+    }
+    #plante-gauche, #plante-droite {
+        width: 100% !important;
+        max-width: 150px;
+    }
+
+}
+@media(max-width:550px) {
+    #canette {
+        max-width: 180px;
+        width: 100% !important;
+    }
+    #plante-gauche, #plante-droite {
+        width: 100% !important;
+        max-width: 130px;
+    }
+    #plante-gauche {
+        transform: translateX(-110%); /* Recule la feuille vers la gauche */
+        bottom: 25px;
+    }
+    #plante-droite {
+        transform: translateX(9%); /* Avance la feuille vers la droite */
+        bottom: 25px;
+    }
+    .container_form_contact p {
+        width: 100%;
+    }
+
+}
+@media(max-width:990px) {
+    .container-inputs-bottom {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    
+    }
+    .container-inputs-bottom p > .span-transition {
+       width: 100%;
+        height: 100%;
+    }
+    .form-commande {
+        background: #3B8E46;
+        padding: 20px 10px;
+    }
+    .container-form-flex-col p > input {
+        margin-left: 0px;
+    }
+}
+
 
