@@ -4,7 +4,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
-
+// test
 if ( !function_exists( 'chld_thm_cfg_locale_css' ) ):
     function chld_thm_cfg_locale_css( $uri ){
         if ( empty( $uri ) && is_rtl() && file_exists( get_template_directory() . '/rtl.css' ) )

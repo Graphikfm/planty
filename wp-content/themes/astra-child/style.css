@@ -12,10 +12,12 @@ Updated: 2025-02-14 15:24:35
 */
 #menu-item-420 {
     background-color: #DC9F96;
-    color: white !important;
 }
 #menu-item-420:hover {
     background-color: #c02e44;
+}
+#menu-item-420 > a {
+    color: white !important;
 }
 
 
@@ -99,6 +101,17 @@ Updated: 2025-02-14 15:24:35
     border-top: 1px solid white;
    
 }
+
+.container_img_text > .titre-fraise-commande, .container_img_text > .titre-framboise-commande, .container_img_text > .titre-pamplemousse-commande, .container_img_text > .titre-citron-commande    {
+    position:absolute;
+    color: #ffffff;
+    font-family:"Syne",Sans-serif;
+    font-size:25px;
+    font-weight: 800;
+    text-transform:uppercase;
+    font-style: normal;
+    word-spacing: 0px;
+}
 .container-inupt-image p {
     display: flex;
     flex-direction: column;
@@ -115,6 +128,7 @@ Updated: 2025-02-14 15:24:35
     gap: 20px;
     border-bottom: 1px solid white;
     margin-bottom:30px;
+    justify-content: center;
 }
 .container-inputs-bottom {
     display: flex;
@@ -145,6 +159,117 @@ p > .button-submit-commande {
     margin: 0px 0px 0px 0px !important;
     height: 60px;
     border-radius: 0px;
+}
+.container-inupt-image {
+    width: 45%;
+}
+.container_img_text > .titre-fraise-commande, .container_img_text > .titre-framboise-commande, .container_img_text > .titre-pamplemousse-commande, .container_img_text > .titre-citron-commande {
+    font-size: 25px;
+}
+.container_img_text > .titre-fraise-commande {
+    top:70px;left:55px;
+
+}
+.container_img_text > .titre-framboise-commande {
+    top:45px;left:60px;
+
+}
+.container_img_text > .titre-pamplemousse-commande {
+    top:50px;left:35px; 
+}
+.container_img_text > .titre-citron-commande {
+    top:70px;left:40px;
+
+}
+@media(max-width:550px) {
+    .container-inupt-image {
+        width: 85%;
+    }
+    .container_img_text > .titre-fraise-commande, .container_img_text > .titre-framboise-commande, .container_img_text > .titre-pamplemousse-commande, .container_img_text > .titre-citron-commande {
+        font-size: 28px;
+    }
+    .container_img_text > .titre-fraise-commande {
+        top:70px;left:45px;
+
+    }
+    .container_img_text > .titre-framboise-commande {
+        top:50px;left:65px;
+
+    }
+    .container_img_text > .titre-pamplemousse-commande {
+        top:50px;left:35px; 
+    }
+    .container_img_text > .titre-citron-commande {
+        top:70px;left:40px;
+
+    }
+    .container-inputs-top {
+        flex-wrap:wrap;
+    }
+}
+    @media(min-width:550px) and (max-width:990px) {
+        .form-commande {
+            padding: 20px 50px !important;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-inupt-image {
+            width: 45%;
+        }
+        .container_img_text > .titre-fraise-commande, .container_img_text > .titre-framboise-commande, .container_img_text > .titre-pamplemousse-commande, .container_img_text > .titre-citron-commande {
+            font-size: 28px;
+        }
+        .container_img_text > .titre-fraise-commande {
+            top:60px;left:65px;
+    
+        }
+        .container_img_text > .titre-framboise-commande {
+            top:55px;left:75px;
+    
+        }
+        .container_img_text > .titre-pamplemousse-commande {
+            top:50px;left:35px; 
+        }
+        .container_img_text > .titre-citron-commande {
+            top:75px;left:50px;
+    
+        }
+        .container-inputs-top {
+        flex-wrap:wrap;
+    }
+
+}
+@media(min-width:550px) and (max-width:990px) {
+        .form-commande {
+            padding: 20px 50px !important;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-inupt-image {
+            width: 45%;
+        }
+        .container_img_text > .titre-fraise-commande, .container_img_text > .titre-framboise-commande, .container_img_text > .titre-pamplemousse-commande, .container_img_text > .titre-citron-commande {
+            font-size: 28px;
+        }
+        .container_img_text > .titre-fraise-commande {
+            top:60px;left:65px;
+    
+        }
+        .container_img_text > .titre-framboise-commande {
+            top:55px;left:75px;
+    
+        }
+        .container_img_text > .titre-pamplemousse-commande {
+            top:50px;left:35px; 
+        }
+        .container_img_text > .titre-citron-commande {
+            top:75px;left:50px;
+    
+        }
+        .container-inputs-top {
+        flex-wrap:wrap;
+    }
+
 }
 .container-form-flex-col p {
     display: flex;
@@ -267,5 +392,3 @@ box-shadow: none;
         margin-left: 0px;
     }
 }
-
-
